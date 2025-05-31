@@ -94,7 +94,8 @@ local service = setmetatable({}, {
 
 local gethiddenproperty_fallback
 do -- * Load Region of Déjà Vu
-	local UGCValidationService -- = service.UGCValidationService
+	local a = Instance.new("Folder",game.RobloxReplicatedStorage) --lord forgive me!
+	local UGCValidationService -- = a
 
 	gethiddenproperty_fallback = function(instance, propertyName)
 		if not UGCValidationService then
